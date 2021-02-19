@@ -121,7 +121,7 @@ function draw()
             mongoose.y+= 5;
           }
 
-          if(score === 5)
+          if(score === 50)
          {
            gameState = "win";
        
@@ -181,11 +181,13 @@ function draw()
     
     if(gameState=== "win")
     {
+        background("yellow");
         noStroke();
         textSize(50)
         
         fill("black")
         text("YOU HAVE PASSED THE TEST!" , width/2,height/2);
+        
     }
 }
 
